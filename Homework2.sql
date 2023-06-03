@@ -4,12 +4,12 @@ SELECT *
 FROM dbo.Student
 Where FirstName = 'Antonio'
 
--- Find all Students with DateOfBirth greater than ‘01.01.1999’
+-- Find all Students with DateOfBirth greater than â€˜01.01.1999â€™
 SELECT *
 FROM dbo.Student
 Where DateOfBirth > '01.01.1999'
 
--- Find all Students with LastName starting With ‘J’ enrolled in January/1998
+-- Find all Students with LastName starting With â€˜Jâ€™ enrolled in January/1998
 SELECT *
 FROM dbo.Student
 Where LastName LIKE 'J%'
@@ -25,7 +25,7 @@ Order By FirstName
 
 SELECT LastName
 FROM dbo.Student
-INTERSECT
+UNION
 SELECT LastName
 FROM dbo.Teacher
 
